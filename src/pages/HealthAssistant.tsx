@@ -119,15 +119,17 @@ const HealthAssistant = () => {
         </div>
 
         <div className="border-t border-border bg-card p-4 space-y-3">
-          <Card
-            className="p-3 cursor-pointer hover:bg-muted/50 transition-colors"
-            onClick={() => navigate("/")}
-          >
-            <div className="flex items-center gap-2">
-              <Utensils className="h-4 w-4 text-primary" />
-              <span className="text-sm font-medium">饮食健康管家</span>
-            </div>
-          </Card>
+          <div className="flex">
+            <Card
+              className="p-2 cursor-pointer hover:bg-muted/50 transition-colors w-auto"
+              onClick={() => navigate("/")}
+            >
+              <div className="flex items-center gap-1.5">
+                <Utensils className="h-3.5 w-3.5 text-primary" />
+                <span className="text-xs font-medium">饮食健康管家</span>
+              </div>
+            </Card>
+          </div>
 
           <div className="flex gap-2">
             <Input
